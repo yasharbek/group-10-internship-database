@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ExtraText">
+
+    <!-- look at different types of layouts -->
+    android:id="@+id/checkPrograms"
+
+    <LinearLayout
+        android:id="@+id/checkPrograms"
+        android:layout_width="400dp"
+        android:layout_height="558dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="50dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Registration Form Cont."
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="________________________________"
+            android:textSize="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <!-- to get the name of the user: -->
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Name"
+            android:textSize="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/usersName"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter your name"
+            tools:ignore="MissingConstraints" />
+
+        <!-- to get the pronouns of the user: -->
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Pronouns"
+            android:textSize="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/usersPronouns"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter pronouns"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Class Year"
+            android:textSize="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/usersClassYear"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter class year"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Programs Available"
+            android:textSize="15dp"
+            tools:ignore="MissingConstraints" />
+        
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkPrograms">
+
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:onClick="onReturnButtonClick"
+            android:text="Back to Main Page"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="667dp" />
+
+        <Button
+            android:id="@+id/submitFormButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSubmitButtonClick"
+            android:text="Submit Profile" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

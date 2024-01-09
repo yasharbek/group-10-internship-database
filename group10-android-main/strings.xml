@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">FLIOPP</string>
+    <string-array name="category_array">
+        <item>Academic</item>
+        <item>Business</item>
+        <item>Career Development</item>
+        <item>Education</item>
+        <item>Engineering</item>
+        <item>Health Care</item>
+        <item>Law</item>
+        <item>Non-Profit</item>
+        <item>Research</item>
+        <item>Science</item>
+        <item>Social Work</item>
+        <item>Sports</item>
+        <item>Technology</item>
+        <item>Volunteering</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="documentation_array">
+        <item>Only U.S. Citizens</item>
+        <item>U.S. Citizens and Permanent Residents</item>
+        <item>DACAmented Applicants Accepted</item>
+        <item>Undocumented Applicants Accepted</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="location_array">
+        <item>Remote</item>
+        <item>Outside the U.S.</item>
+        <item>In the U.S.</item>
+    </string-array>
+    <string-array name="editFeature_array">
+        <item>Link</item>
+        <item>Category</item>
+        <item>Deadline</item>
+        <item>GPA Requirement</item>
+        <item>Applicable Year</item>
+        <item>Program Start Date</item>
+    </string-array>
+    <string-array name="year_array">
+        <item>Freshman</item>
+        <item>Sophomore</item>
+        <item>Junior</item>
+        <item>Senior</item>
+        <item>Underclassmen</item>
+        <item>Upperclassmen</item>
+        <item>All</item>
+    </string-array>
+</resources>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--android:background="@android:color/white"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:text=" " />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/HomePageButton"
+            android:text="Back To Homepage"
+            android:onClick="onHomePageButtonClick"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="10dp"
+            android:text="________________________________________" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="20dp"
+            android:text="Spotlighted Program: " />
+
+
+        <TextView
+            android:id="@+id/spotlight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:text="Spotlighted Program (DISPLAY)" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="10dp"
+            android:text="________________________________________" />
+
+        <TextView
+            android:id="@+id/filterInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:text="Filter through each category one by one!" />
+
+            <TextView
+                android:id="@+id/listedFilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:text=" " />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/userCategoryFilter"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <Button
+                        android:id="@+id/categoryFilterButton"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="onCategoryFilterButton"
+                        android:text="Apply Category filter" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/userDocumentedFilter"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <Button
+                        android:id="@+id/documentedFilterButton"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="onStatusFilterButton"
+                        android:text="Apply Documented filter" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/userLocationFilter"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <Button
+                        android:id="@+id/locationFilterButton"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="onLocationFilterButton"
+                        android:text="Apply Location filter" />
+        </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/userYearFilter"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="type a year (i.e. 1,2 for freshmen/sophomore)" />
+
+                    <Button
+                        android:id="@+id/yearFilterButton"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="onYearFilterButton"
+                        android:text="Apply Year Filter!" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/userGPAFilter"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="type a gpa" />
+
+                <Button
+                    android:id="@+id/gpaFilterButton"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Apply GPA Filter!"
+                    android:onClick="onGPAFilterButton" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/resetFiltersButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reset Filters"
+                    android:gravity="center"
+                    android:onClick="onResetFiltersButton" />
+
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="20dp"
+            android:text="______________________________________________" />
+
+        <TextView
+            android:id="@+id/programs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="20dp"
+            android:text="Programs: " />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="10dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
